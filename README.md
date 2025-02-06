@@ -9,12 +9,14 @@ This package is ment to be used to parse and further process the results produce
 
 GO_cluster stands out for its ability to identify overlapping GO terms across multiple GO analyses, wether they are different species or treatment conditions. Additionally, it can determine representative GO terms for shared clusters, providing valuable insights into functional similarities. 
 
-**Multispecies Analysis**
+*Multispecies Analysis*
+
 Corrylation between GO term dissimilarity between species can be assessed. Average shared GO term dissimilarity between species is used for multispecies clustering.  
 The GO term selected to represent a GO cluster is the term with the largest average propotion of genes change between GO analyses. 
 
 
-*Single Species Transcriptome Analysis*
+***Single Species Transcriptome Analysis***
+
 Inputs:
 a. Gene feature files for both species (.gff).
 b. List of up and down regulated genes, enrichGO output 
@@ -27,7 +29,8 @@ Steps:
 
 Outputs: 
 
-*Two Species Transcriptome Analysis*
+***Two Species Transcriptome Analysis***
+
 Inputs:
 a. Gene feature files for both species (.gff).
 b. List of up and down regulated genes 
