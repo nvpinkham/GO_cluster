@@ -38,7 +38,6 @@ c. Genome annotation database (org.Xy.eg.db)
 
 Steps:
 1. use "GO.parse" function to format each enrichGO output into a dataframe
-2. 
 3. run "combine.GOs" to cluster GO terms from multiple species. 
 4. visulize with "plot.shared.GOs"
 Outputs: 
