@@ -1,29 +1,45 @@
 # GO_cluster
-R package for clustering gene ontology (GO) terms with shared genes to simplify reporting GO term analysis. 
+R package for clustering gene ontology (GO) terms within single or cultiple GO analyses to simplify reporting GO term analysis. 
 
-GO terms 
+This package is ment to be used to parse and further process the results produced by "clusterProfiler" [1]
+
 
 ![Bt_Lr_Dendrogram_CC_2025-02-06](https://github.com/user-attachments/assets/e8ecedd2-f65f-4ca7-a3e6-6dba2e04c16f)
 
 
-This package is ment to be used to parse and further process the results produced by "clusterProfiler" [1]
-
 GO_cluster stands out for its ability to identify overlapping GO terms across multiple GO analyses, wether they are different species or treatment conditions. Additionally, it can determine representative GO terms for shared clusters, providing valuable insights into functional similarities. 
 
+**Multispecies Analysis**
+Corrylation between GO term dissimilarity between species can be assessed. Average shared GO term dissimilarity between species is used for multispecies clustering.  
 The GO term selected to represent a GO cluster is the term with the largest average propotion of genes change between GO analyses. 
 
 
-**Single Species Transcriptome Analysis**
+*Single Species Transcriptome Analysis*
 Inputs:
-1. Gene feature files for both species
-2. Expression quantification data from Salmon output files for both species.
+a. Gene feature files for both species (.gff).
+b. List of up and down regulated genes, enrichGO output 
+c. Genome annotation database (org.Xy.eg.db)
 
+Steps:
+1. use "GO.parse" function to format the enrichGO output into a dataframe
+2. run "combine.GOs.1" to cluster GO terms 
+3. visulize with "plot.shared.GOs"
 
+Outputs: 
 
-**Two Species Transcriptome Analysis**
+*Two Species Transcriptome Analysis*
 Inputs:
-1. Gene feature files for both species
-2. Expression quantification data from Salmon output files for both species.
+a. Gene feature files for both species (.gff).
+b. List of up and down regulated genes 
+c. Genome annotation database (org.Xy.eg.db)
+
+Steps:
+1. use "GO.parse" function to format each enrichGO output into a dataframe
+2. 
+3. run "combine.GOs" to cluster GO terms from multiple species. 
+4. visulize with "plot.shared.GOs"
+Outputs: 
+
 
 References:
 
