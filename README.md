@@ -2,14 +2,7 @@
 
 This package provides a comprehensive set of tools for analyzing and visualizing gene ontology (GO) term relationships within and across species. Users can group GO terms based on shared genes within a single species and compare GO term similarities between species. The package further allows for the identification of representative GO clusters, either within a single species or shared between two species, providing insights into conserved or species-specific biological functions. Additionally, the package includes visualization features that plot the distribution of log fold changes (lfcs) of genes within representative GO terms, enabling users to better understand gene expression dynamics. By streamlining complex GO term analyses, GO_cluster offers an invaluable resource for genomic research and comparative functional studies
 
-![image](https://github.com/user-attachments/assets/bff430d2-d4b4-414e-ab32-805d694d1f79)
-
-
-
-R package for clustering gene ontology (GO) terms within single or cultiple GO analyses to simplify reporting GO term analysis. 
-
 This package is ment to be used to parse and further process the results produced by "clusterProfiler" [1]
-
 
 ![Bt_Lr_Dendrogram_CC_2025-02-06](https://github.com/user-attachments/assets/e8ecedd2-f65f-4ca7-a3e6-6dba2e04c16f)
 
