@@ -18,9 +18,9 @@ The GO term selected to represent a GO cluster is the term with the largest aver
 
 Inputs:
 
-a. Gene feature files for both species (.gff) 
-b. List of up and down regulated genes, enrichGO output 
-c. Genome annotation database (org.Xy.eg.db)
+1. Gene feature files for both species (.gff) 
+2. List of up and down regulated genes, enrichGO output 
+3. Genome annotation database (org.Xy.eg.db)
 
 Steps:
 1. use "GO.parse" function to format the enrichGO output into a dataframe
@@ -32,9 +32,9 @@ Outputs:
 ***Two Species Transcriptome Analysis***
 
 Inputs:
-a. Gene feature files for both species (.gff) 
-b. List of up and down regulated genes 
-c. Genome annotation database (org.Xy.eg.db)
+1. Gene feature files for both species (.gff) 
+2. List of up and down regulated genes 
+3. Genome annotation database (org.Xy.eg.db)
 
 Steps:
 1. use "GO.parse" function to format each enrichGO output into a dataframe
