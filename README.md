@@ -16,8 +16,6 @@ The GO term selected to represent a GO cluster is the term with the largest aver
 
 ***Single Species Transcriptome Analysis***
 
-*RUN "Single_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*
-
 Inputs:
 
 1. Deseq output (see example "P_aeruginosa_results.csv" in Data folder)
@@ -27,6 +25,7 @@ Steps:
 1. use "GO.parse" function to format the enrichGO output into a dataframe
 2. run "combine.GOs" to cluster GO terms 
 3. visulize with "plot.shared.GOs"
+*****RUN "Single_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*****
 
 
 ***Two Species Transcriptome Analysis***
@@ -39,6 +38,7 @@ Steps:
 1. use "GO.parse" function to format each enrichGO output into a dataframe
 2. run "combine.GOs" to cluster GO terms from multiple species. 
 3. visulize with "plot.shared.GOs"
+*****RUN "Two_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*****
 
 
 References:
