@@ -4,7 +4,9 @@ R package provides a set of tools for analyzing and visualizing gene ontology (G
 
 This package is ment to be used to parse and further process the results produced by "clusterProfiler" [1]
 
-![Bt_Lr_Dendrogram_CC_2025-02-06](https://github.com/user-attachments/assets/e8ecedd2-f65f-4ca7-a3e6-6dba2e04c16f)
+![Ec_Pa__Dendrogram_MF_2025-02-19](https://github.com/user-attachments/assets/b6510d71-af9f-49d5-877f-e3b2ac9d4716)
+![Ec_Pa_MF_Shared_Only_2025-02-19](https://github.com/user-attachments/assets/717224de-5243-49ee-b115-16659d0d15c6)
+
 
 GO_cluster stands out for its ability to identify overlapping GO terms across multiple GO analyses, wether they are different species or treatment conditions. Additionally, it can determine representative GO terms for shared clusters, providing valuable insights into functional similarities. 
 
