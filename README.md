@@ -14,7 +14,7 @@ Corrylation between GO term dissimilarity between species can be assessed. Avera
 The GO term selected to represent a GO cluster is the term with the largest average propotion of genes change between GO analyses. 
 
 
-***Single Species Transcriptome Analysis***
+## ***Single Species Transcriptome Analysis***
 
 Inputs:
 
@@ -26,7 +26,7 @@ Steps:
 2. run "combine.GOs" to cluster GO terms 
 3. visulize with "plot.shared.GOs"
 
-### *RUN "Single_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*
+#### *RUN "Single_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*
 
 
 ***Two Species Transcriptome Analysis***
