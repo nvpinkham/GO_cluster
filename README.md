@@ -26,7 +26,7 @@ Steps:
 2. run "combine.GOs" to cluster GO terms 
 3. visulize with "plot.shared.GOs"
 
-#*RUN "Single_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*
+*#RUN "Single_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*
 
 
 ***Two Species Transcriptome Analysis***
