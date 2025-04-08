@@ -16,7 +16,7 @@ The GO term selected to represent a GO cluster is the term with the largest aver
 
 ***Single Species Transcriptome Analysis***
 
-*RUN "Single_species_tutorial.25.04.08.R" for indepth exploration of single species analysis!*
+*RUN "Single_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*
 
 Inputs:
 
