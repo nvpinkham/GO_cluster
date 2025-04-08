@@ -17,8 +17,11 @@ The GO term selected to represent a GO cluster is the term with the largest aver
 ***Single Species Transcriptome Analysis***
 
 Inputs:
-a. Gene feature files for both species (.gff).
+
+a. Gene feature files for both species (.gff)
+
 b. List of up and down regulated genes, enrichGO output 
+
 c. Genome annotation database (org.Xy.eg.db)
 
 Steps:
