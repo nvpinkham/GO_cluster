@@ -16,31 +16,29 @@ The GO term selected to represent a GO cluster is the term with the largest aver
 
 ***Single Species Transcriptome Analysis***
 
+*RUN "Single_species_tutorial.25.04.08.R" for indepth exploration of single species analysis!*
+
 Inputs:
 
-1. Gene feature files for both species (.gff) 
-2. List of up and down regulated genes, enrichGO output 
-3. Genome annotation database (org.Xy.eg.db)
+1. Deseq output (see example "P_aeruginosa_results.csv" in Data folder)
+2. Genome annotation database (org.Xy.eg.db)
 
 Steps:
 1. use "GO.parse" function to format the enrichGO output into a dataframe
-2. run "combine.GOs.1" to cluster GO terms 
+2. run "combine.GOs" to cluster GO terms 
 3. visulize with "plot.shared.GOs"
 
-Outputs: 
 
 ***Two Species Transcriptome Analysis***
 
 Inputs:
-1. Gene feature files for both species (.gff) 
-2. List of up and down regulated genes 
-3. Genome annotation database (org.Xy.eg.db)
+1. Deseq outputs for both species (see example "P_aeruginosa_results.csv" in Data folder)
+2. Genome annotation databasesfor both species (org.Xy.eg.db) 
 
 Steps:
 1. use "GO.parse" function to format each enrichGO output into a dataframe
-3. run "combine.GOs" to cluster GO terms from multiple species. 
-4. visulize with "plot.shared.GOs"
-Outputs: 
+2. run "combine.GOs" to cluster GO terms from multiple species. 
+3. visulize with "plot.shared.GOs"
 
 
 References:
