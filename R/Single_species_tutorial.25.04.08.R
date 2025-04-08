@@ -37,15 +37,16 @@ genes1.up <- rownames(d1.pick)[d1.pick$log2FoldChange > lcf.cut_off ]
 genes1.down <- rownames(d1.pick)[d1.pick$log2FoldChange < lcf.cut_off ]
 
 
-# =========================
-# Step 3: GO Enrichment Analysis
-# =========================
 
 # Define the GO categories: Biological Process (BP), Cellular Component (CC), and Molecular Function (MF).
 types <- c("BP", "CC", "MF")
 
 # Loop through each GO category for enrichment analysis.
 for(t in 1 : 3){
+  
+  # =========================
+  # Step 3: GO Enrichment Analysis
+  # =========================
   
   # Perform GO enrichment on down regulated genes
   go.1.down <- enrichGO(gene = genes1.down, 
@@ -77,7 +78,10 @@ for(t in 1 : 3){
   
   par(mar = c(5.1, 5.1, 2, 15))
   
-  # Combine and format GO terms using a custom function `combine.GOs`
+  # =========================
+  # Step 4: Cluster and combine GO terms
+  # =========================
+  
   # Note: Passing the same inputs twice to make plot for only one species instead of two (tricking it)
   GOs.pick <- combine.GOs(go.1.down.parsed, 
                           go.1.up.parsed, 
@@ -87,6 +91,10 @@ for(t in 1 : 3){
                           dseq2.pick = d1.pick)# this will be fixed for future versions 
   
   GOs.pick <- GOs.pick[seq(1, nrow(GOs.pick), 2), ] #even rows are duplicated (finish tricking it))
+
+  # =========================
+  # Step 5: Visualize representative clusters 
+  # =========================
   
   par(mar = c(4, 5, 4, 15))
   
