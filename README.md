@@ -22,10 +22,11 @@ Inputs:
 2. Genome annotation database (org.Xy.eg.db)
 
 Steps:
-1. use "GO.parse" function to format the enrichGO output into a dataframe
-2. run "combine.GOs" to cluster GO terms 
-3. visulize with "plot.shared.GOs"
-
+1. import Deseq2 results
+2. Filter Significant Genes
+3. use "GO.parse" function to format the enrichGO output into a dataframe
+4. run "combine.GOs" to cluster GO terms 
+5. visulize with "plot.shared.GOs"
 ##### *RUN "Single_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*
 
 
@@ -36,10 +37,12 @@ Inputs:
 2. Genome annotation databasesfor both species (org.Xy.eg.db) 
 
 Steps:
-1. use "GO.parse" function to format each enrichGO output into a dataframe
-2. run "combine.GOs" to cluster GO terms from multiple species. 
-3. visulize with "plot.shared.GOs"
-##### *RUN "Two_species_tutorial.25.04.08.R" for in depth exploration of single species analysis!*
+1. import Deseq2 results
+2. Filter Significant Genes
+3. use "GO.parse" function to format the enrichGO output into a dataframe
+4. run "combine.GOs" to cluster GO terms 
+5. visulize with "plot.shared.GOs"
+##### *RUN "Two_species_tutorial.25.04.08.R" for in depth exploration of two species analysis!*
 
 References:
 
