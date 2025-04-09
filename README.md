@@ -1,12 +1,12 @@
 # GO_cluster
 
-GO_cluster is used to identify overlapping GO terms across multiple GO analyses, wether they are different species or treatment conditions and select representative GO terms for GO clusters/Bins, providing valuable insights into functional similarities. 
+GO_cluster is used to identify overlapping Gene Ontology (GO) terms across multiple GO analyses—whether they involve different species or treatment conditions—and to select representative GO terms for each GO cluster/bin. This provides valuable insights into functional similarities.
 
-This package is ment to be used to parse and further process the results produced by "clusterProfiler" [1]
+This package is meant to be used for parsing and further processing the results produced by clusterProfiler [1].
 
-Go term dissimilarty is calculated for each GO analysis as the portion of significantly changed genes shared between GO terms. 
-The GO term selected to represent a GO cluster/bin is the term with the largest propotion of genes changed. 
-If it is a two species analysis the GO term dissimilirarity are averaged between the two species and the representative GO term is the term with the largest propotion of genes changed between the twp species. 
+GO term dissimilarity is calculated for each GO analysis as the proportion of significantly changed genes shared between GO terms. The GO term selected to represent a GO cluster/bin is the one with the largest proportion of significantly changed genes.
+
+In two-species analyses, GO term dissimilarities are averaged between the two species, and the representative GO term is the one with the largest average proportion of significantly changed genes across both species.
 
 ## Go cluster binning:  
 ![Ec_Pa__Dendrogram_MF_2025-02-19](https://github.com/user-attachments/assets/b6510d71-af9f-49d5-877f-e3b2ac9d4716)
