@@ -1,0 +1,11 @@
+Package: GOcluster
+Title: GO_cluster is used to identify overlapping GO terms across multiple GO analyses, wether they are different species or treatment conditions and select representative GO terms for GO clusters/Bins, providing valuable insights into functional similarities.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Nick", "Pinkham", , "nickvpinkham@gmail.com", role = c("aut", "cre"))
+Description: Go term dissimilarly is calculated for each GO analysis as the portion of significantly changed genes shared between GO terms. The GO term selected to represent a GO cluster pr bin is the term with the largest proportion of genes changed. If it is a two species analysis the GO term dissimilarity are averaged between the two species and the representative GO term is the term with the largest proportion of genes changed between the two species.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
